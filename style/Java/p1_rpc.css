@@ -1,0 +1,63 @@
+body{
+    background-color: brown;
+    font-weight: normal;
+}
+h1{
+    color: aqua;
+    font-size: 2px;
+    text-align: center;
+}
+.scoreboard{
+    display: flex;
+    justify-content: center;
+    margin-top: 2px;
+}
+.choices{
+    display:flex;
+    justify-content: center;
+    margin-top: 2px;
+}
+.choice{
+    border:2px solid rgb(48, 206, 164);
+    background-color: chartreuse;
+    color: azure;
+    display: flex;
+    justify-content: center;
+    margin-top: 2px;
+    font-size: 2px;
+    text-align: center;
+    padding:2rem;
+}
+.choice:hover{
+    transform: scale(1.2);
+}
+.choice:active{
+    transform: scale(1.2);
+}
+ .result{
+    font-size: 2px;
+    text-align: center;
+    color: darkgreen; 
+    margin-top: 2px;
+ }
+ #computer choioce{
+    color: blueviolet;
+    font-size: 2px;
+    text-align: center;
+    margin-top: 2px;
+ }
+ .play again{
+    border:2px solid rgb(48, 206, 164);
+    background-color: chartreuse;
+    color: azure;
+    display: flex;
+    justify-content: center;
+    margin-top: 2px;
+    font-size: 2px;
+    text-align: center;
+    padding:2rem;
+ }
+ .play again:hover{
+    color: darksalmon;
+ }
+ 

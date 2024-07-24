@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment details</title>
+</head>
+<body>
+    <form action="">
+        <h1>Payment Form</h1> <!--h1 use highlight the heading-->
+        <p>required fields are followed by *</p> <!--requred is us use to see the *-->
+        <!--contact information-->
+        <h2>Contact Information</h2> <!--h2 is next stage-->
+        <p>Name: *<input type="text" name="name" required></p> <!-- p use to write para-->
+        <input type="color" name="value">
+         <!-- braket highlite-->
+            
+          <fieldset>  
+            <legend>Gender  *</legend>
+        <p>
+            Male <input type="radio" name="gender" id="male" required>
+            Female <input type="radio" name="gender" id="female"required>
+        </p>
+    </fieldset>
+    <p>Adress:  <textarea name="adress" id="adress" cols="100" rows="10"></textarea></p>
+    <p>Email *<input type="email"name="email"id="email" required></p>
+    <p>Pincode: <input type="pincode"name="pincode"id="pincode"></p>
+    <p>Mobile No *<input type="mobile no"name="mobile no"id="mobile no" required></p>
+    <p>Card Type:*
+        <select name="Card type" id="card type"> required
+            
+            <option value="">--Select Card Type--</option>
+            <option value="Visa">Visa</option>
+            <option value="Rupay">Rupay</option>
+            <option value="Debit">Debit</option>
+        </select>
+
+    </p>
+    <p>Card Number: *<input type="card number"name="card number"id="card number" required></p>
+    <p>Expiration Date: * <input type="date" name="exp_date" id="exp_date" required></p>
+    <p>CVV *<input type="password" name="cvv" id="cvv" required></p>  <!-- here password use ,as cvv is like a password -->
+    <input type="submit"value="submit">
+    </form>
+</body>
+</html>

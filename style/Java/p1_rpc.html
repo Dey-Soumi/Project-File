@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <!--<link rel="stylsheet" href="css/p1_rpc.css">-->
+
+    <style>
+        /* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+/* Apply global styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+        body{
+    background-color: rgb(215, 223, 226);
+    font-weight: normal;
+    border-radius: 20px;
+    size-adjust: center;
+
+}
+h1{
+    color: rgb(123, 0, 255);
+    font-size: 20px;
+    text-align:center;
+}
+.scoreboard{
+    display: flex;
+    justify-content: center;
+    margin-top: 2px;
+}
+.scoreboard>div{
+  font-size: 20px;
+  margin:2px;
+    text-align:center;
+    color: cadetblue;
+    border-radius:solid 20px blue;
+  padding:10px;
+
+}
+.choices{
+    display:flex;
+    justify-content: center;
+    margin-top: 2px;
+}
+.choice{
+    border:2px solid rgb(48, 206, 164);
+    border-radius: 10px;
+    background-color: white;
+    color: rgb(12, 19, 140);
+    display: flex;
+    justify-content: center;
+    margin: 0 2rem;
+    font-size: 2px;
+    text-align: center;
+    padding:2rem;
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+    align-items: center;
+}
+.choice:hover{
+    transform: scale(1.2);
+}
+.choice:active{
+    transform: scale(1.2);
+}
+ .result{
+    font-size: 2px;
+    text-align: center;
+    color: darkgreen; 
+    margin-top: 2px;
+ }
+ #computer choioce{
+    color: blueviolet;
+    font-size: 2px;
+    text-align: center;
+    margin-top: 2px;
+ }
+ .play-again{
+    border:2px solid rgb(48, 206, 164);
+    background-color: #002aff;
+    color: rgb(48, 227, 227);
+    display: flex;
+    justify-content: center;
+    margin-left: -20px;
+    font-size: 20px;
+    padding:0px 10px 2px;
+    display: content;
+    position: center;
+    /*cursor: pointer;
+    transform: scale(1.1rem);*/
+ }
+ .play-again:hover{
+    color: rgb(77, 24, 6);
+ }
+ .play-again:active {
+  transform: scale(0.9);
+}
+
+p{
+  color: hwb(321 31% 44%);
+  text-align: center;
+}
+
+
+/* Add responsive design */
+@media only screen and (max-width: 600px) {
+  .choices {
+    flex-wrap: wrap;
+  }
+
+  .choice {
+    margin: 2rem 1rem;
+  }
+
+  .timer {
+    margin-top: 1rem;
+  }
+}
+ 
+    </style>
+
+
+</head>
+<body background="game.jpg">
+ <a href="https://www.youtube.com//" class="logo" target="_blank">
+  		<!--<img src="https://www.codewithfaraz.com/InstaPic.png" alt="">-->
+      <img src="soumi dey.jpg" height="50px" width="50px">
+      
+    <h1>Rock Paper Scissors</h1>
+    <div class="scoreboard">
+       <div class="player">Player:0</div>
+           <div class="computer">Computer:0</div>
+     </div>
+     <div class="choices">
+        <div class="choice" id="rock">
+          <em class="fa-hand-rock-o"></em>
+        </div>
+        <div class="choice" id="paper">
+          <em class="fa-hand-paper-o"></em>
+        </div>
+        <div class="choice"  id="scissors">
+          <em class="fa-hand-scissors-o"></em>
+        </div>
+     </div>
+     <div class="reults" id="result">
+        <p>Choose your weapons </p>
+     </div>
+     
+  <div id="computer-choice"></div>
+  <div class="timer" id="timer">
+    <p>Time left: <span id="countdown">10</span>s</p>
+  </div>
+  <button class="play-again" id="play-again">Play Again</button>
+  <script src="p1_rpc.js"></script>
+</body>
+</html>

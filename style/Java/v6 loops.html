@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+</head>
+<body>
+    <h1>What are yo doing</h1>
+  <script>
+    //for in loop
+    let animal={
+     name:"Lion",
+     //color:"yellow",
+     leg:4
+    };
+    for(let key in animal) {
+        console.log(key,animal[key]);
+    }
+    //arrays
+    let names=["Rahul","Soumi","Shivam"];
+    for(let index in names){
+        console.log(index,name[index]);
+        console.log(names.length);
+    }
+    //for of loops
+    for(let name of names){
+        console.log(name)
+    }
+   //function
+   function namasteWorld(name,firstName){
+    console.log("Namaste"+name+" "+ firstName);
+   }
+   namasteWorld("Soumi")
+  </script>
+</body>
+</html>

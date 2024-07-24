@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+      .box{
+        border:dotted 2px rgb(96,139,168);
+        width:500px;
+        display:flex;
+        align-items: flex-end;
+       /*flex-direction: rowe;
+       flex-wrap:nowrap;*/
+
+      }
+      .box > div{
+        border:solid 2px rgb(96,139,168);           /*calculation:*/
+        border-radius: 5px;                          /*let,width of container=500px*/
+      }                                              /*width of each border side=2px*/
+      .one{                                          /*space avalable=500-4=496px*/
+        /*flex-basis:0px;                             width of 3 items if 100px=300px
+        flex-grow: 0px; 
+        flex-shrink:200px; */ 
+        flex:0 1 100px; 
+        align-self:center;                          /* so, avalable space=496-300=196p*/
+                                                       
+                                                       /*flex grow of 1st item=0*/
+      }                                                /*flex grow of 2nd item=1*/
+                                                        /*flex grow of 3rd item=1*/
+                                                       /* new width 1 st item is 100px*/
+      .two{                                            /* new widthe of 2nd &3rd item=100+196/2=198px*/
+        /*flex-basis:0px;
+        flex-grow: 1px; 
+        flex-shrink:200px;*/
+        flex:0 1 100px;
+        align-self:center;   
+      }
+      .three{
+        /*flex-basis: 0px;
+        flex-grow: 1px;
+         flex-shrink:200px; */
+         flex:0 1 100px;
+         align-self:center;  
+      }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="one">one</div>
+        <div class="two">two</div>
+        <div class="three">three
+        <br>has
+        <br>extra
+        <br>text
+        </div>
+    </div>
+</body>
+</html>

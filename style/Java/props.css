@@ -1,0 +1,22 @@
+.row{
+    display:flex;
+    flex-wrap: wrap;
+}
+.col{
+    flex-basis: 50%;
+}
+.box{
+    padding: 10px;
+}
+.button{
+    margine:8px;
+}
+.red{
+    color: red;
+}
+.blue{
+    color: blue;
+}
+.green{
+    color: green;
+}

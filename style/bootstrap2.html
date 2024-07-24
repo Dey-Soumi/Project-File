@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bootstrap2</title>
+</head>
+<style>
+/*.p-3 mb-2 bg-primary text-white {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-success-rgb), var(--bs-bg-opacity)) !important;
+}*/
+.py-5{
+    background-color: white;
+}
+.panel{
+    color: rgb(49, 49, 128);
+    background-color: solid 2px antiquewhite;
+    border-radius:0.3rem;
+    padding:1rem;
+    margin-bottom:1rem;
+}
+.panel.panel-blue{
+    border: solid 2px rgb(166, 0, 255);
+    background-color: antiquewhite;
+    color: aqua;
+}
+.panel.panel-pink{
+    border: solid 2px rgb(187, 2, 27);
+    background-color: antiquewhite;
+    color: rgb(208, 255, 0);
+}
+.panel.panel-yellow{
+    border: solid 2px rgb(24, 7, 9);
+    background-color: antiquewhite;
+    color: rgb(0, 255, 72);
+}
+/*.row{
+    border:solid 2px black
+}
+.col{
+    background-color: antiquewhite;
+}*/
+</style>
+<body class="py-5">
+    <!--<div class="p-3 mb-2 bg-primary text-white">.bg-primary</div>
+<div class="p-3 mb-2 bg-secondary text-white">.bg-secondary</div>
+<div class="p-3 mb-2 bg-success text-white">.bg-success</div>
+<div class="p-3 mb-2 bg-danger text-white">.bg-danger</div>
+<div class="p-3 mb-2 bg-warning text-dark">.bg-warning</div>
+<div class="p-3 mb-2 bg-info text-dark">.bg-info</div>
+<div class="p-3 mb-2 bg-light text-dark">.bg-light</div>
+<div class="p-3 mb-2 bg-dark text-white">.bg-dark</div>
+<div class="p-3 mb-2 bg-body text-dark">.bg-body</div>
+<div class="p-3 mb-2 bg-white text-dark">.bg-white</div>
+<div class="p-3 mb-2 bg-transparent text-dark">.bg-transparent</div>-->
+<div class="container panel panel-blue">
+    Hello!I am simple container
+</div class="container-fluid my-4 panel panel-blue">
+Hello! I am in fluid container
+</div>
+<div class="container bg-light">
+    <div class="row">
+        <div class="col">
+            <div class="panel panel-blue"> This is a single sentence</div>
+        </div>
+        <div class="col">
+            <div class="panel panel-blue"> This is a first sentence</div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="panel panel-pink"> This is a second sentence</div>
+        </div>
+        <div class="col">
+            <div class="panel panel-pink"> This is a third sentence</div>
+        </div>
+    </div>
+</div>
+<div class="container bg-light">
+    <div class="row">
+        <div class="col-sm-6 col-lg-2 panel panel-yellow">soumi</div>
+        <div class="col-sm-6 col-lg-2 panel panel-yellow"> dey</div>
+        <div class="col-sm-6 col-lg-2 panel panel-yellow">soumi</div>
+        <div class="col-sm-6 col-lg-2 panel panel-yellow"> dey</div>
+    </div>
+    <div class="container bg-light">
+        <div class="row">
+            <div class="col-md-4 offset-md-4 panel panel-yellow">soumi</div>
+            <div class="col-sm-6 col-lg-2 panel panel-yellow"> dey</div>
+        </div>
+</div> 
+</body>
+</html>
