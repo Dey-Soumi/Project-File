@@ -197,11 +197,14 @@ justify-content: center;
         font-style: bold;
         display: flex;
         align-items: center;
-        margin-bottom: 17px;
+        margin:19px -608px 20px 5px;
         justify-content: center;
         text-align: center;
         position: relative;
         font-size: 35px;
         box-shadow: 0 0 14px white;
     }
-}
+        .weather-report .report{
+            width:calc(100% /4 - 62px);
+        }
+    }

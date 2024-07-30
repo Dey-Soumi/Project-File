@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #343131;
+}
+
+header {
+    background-color: #3323e7;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    color: aquamarine;
+    font-size: 1.2rem;
+
+
+}
+
+main {
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 800px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.product:hover{
+    text-decoration: none;
+    color: rgb(121, 24, 225);
+    font-size: 1.2rem;
+
+}
+.product {
+    border: 1px solid #533c96;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    flex: 1 1 calc(33% - 2rem);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+button{
+    color: #FAFAFA;
+    background-color: #77a1cc;
+}
+button:hover {
+    text-decoration: none;
+    color: rgb(121, 24, 225);
+    font-size: 1.2rem;
+}
+
+.cart-items {
+    border-top: 1px solid #ccc;
+    margin-top: 1rem;
+    padding-top: 1rem;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: -11rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

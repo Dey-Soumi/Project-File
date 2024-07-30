@@ -66,6 +66,11 @@ main hr {
     width: 30%;
 
 }
+.leftSection p{
+    font-size: 20px;
+    margin: 15px,0;
+    padding: 15px 0;
+}
 
 .leftSection {
     width: 50%;
@@ -76,6 +81,7 @@ main hr {
 .leftSection .buttons{
     padding: 50px 0;
 }
+
 .leftSection .btn{
     padding: 12px;
     background-color: rgba(77, 93, 113, 0.324);
@@ -84,6 +90,12 @@ main hr {
     border-radius: 6px;
     font-size: 20px;
     cursor: pointer;
+}
+.leftSection .btn:hover{
+    color: aquamarine;
+    text-decoration: none;
+    font-size: 1.2rem;
+
 }
 
 .rightSection {
@@ -94,10 +106,13 @@ main hr {
 .rightSection img {
     width: 80%;
     margin: 50px 0;
+    background-color: rgb(250, 233, 215);
+    position: relative;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .purple {
-    color: rgb(36, 36, 99);
+    color: rgb(29, 134, 195);
 }
 
 #element {
@@ -108,7 +123,7 @@ main hr {
     color: rgb(149, 63, 225);
     max-width: 80%;
     margin: auto;
-    height: 40rem
+    height: 24rem
 }
 
 .secondSection h1 {
@@ -118,9 +133,9 @@ main hr {
 
 .secondSection .box {
     background: rgb(245, 234, 234);
-    margin: 56px 0;
+    margin: 34px 0;
     height: 2px;
-    width: 93vw;
+    width: 60vw;
     display: flex;
 }
 
@@ -155,7 +170,7 @@ main hr {
     position: relative;
     top: 90px;
     width: 134px;
-    font-size: 9px;
+    font-size: 12px;
     font-style: italic;
     font-family: 'Poppins';
 
@@ -171,6 +186,9 @@ footer {
     padding: 23px 122px;
     justify-content: space-evenly;
 }
+.footer-first h3{
+    margin: 18px 0 -14px -105px;
+}
 
 .footer li {
     list-style: none;
@@ -183,11 +201,12 @@ footer .footer-left{
     text-align: center;
     padding: 12px 0;
 }
+.footer-fsecond{
+    margin: -2px -1px 3px 175px;
+}
 
 @media  screen and (max-width: 800px)  {
-    body{
-        background-color: rgb(212, 159, 159);
-    }
+    
     .firstSection{
         flex-direction: column-reverse;
     }
@@ -206,8 +225,14 @@ footer .footer-left{
         justify-content: center;
     }
     .rightSection img {
-        width:50vw;
-        margin-bottom: 73px;
+        width:70vw;
+        margin: 9px 0 4px 593px;
+    }
+    .leftSection p{
+        font-size: 20px;
+        margin: 15px,0;
+        padding: 15px 0;
+        display: flex;
     }
 
     .vertical-title, .vertical-desc{
@@ -219,17 +244,23 @@ footer .footer-left{
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: 217vw;
+        height: 130vw;
     }
     .secondSection .box{
         width: 50vw;
     }
     .box{
         flex-direction: column;
+        width: 100px;
     }
     .image-top{
     top: 104px;
 
+    }
+    .footer {
+        display: flex;
+        padding: 37px 136px;
+        justify-content: space-evenly;
     }
     
     nav{
